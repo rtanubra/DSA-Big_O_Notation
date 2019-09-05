@@ -1,4 +1,6 @@
-What does the following algorithm do? What is the Big O of the following algorithm? Explain your answer
+What does the following algorithm do? 
+What is the Big O of the following algorithm? 
+Explain your answer
 
 function isWhat(n) {
     if (n < 2 || n % 1 != 0) {
@@ -9,3 +11,9 @@ function isWhat(n) {
     }
     return true;
 }
+
+First conducts a check to see if n is less than 2 or if n is a decimal number
+    this is constant time.
+Then iterates through 2 to n identifying the first number that is factor of n.
+In the worst case, a prime number is provided then the relationship will be linear.
+    Going with worst case this will be linear.
